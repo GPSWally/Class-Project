@@ -1,14 +1,14 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var cors = require("cors");
-var mongoose = require("mongoose");
+//var mongoose = require("mongoose");
 var expressSession = require("express-session");
 var app = express();
 
-mongoose.connect("mongodb://localhost");
+//mongoose.connect("mongodb://localhost");
 
-var appRoutes = require("./routes_login.js")(app, mongoose);
-var appAngular2 = require("./routes_angular2.js")(app, mongoose);
+//var appRoutes = require("./routes_login.js")(app, mongoose);
+//var appAngular2 = require("./routes_angular2.js")(app, mongoose);
 
 app.use(bodyParser.json());
 

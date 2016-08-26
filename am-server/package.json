@@ -14,6 +14,7 @@
     "express": "^4.14.0",
     "express-session": "^1.14.0",
     "mongoose": "^4.5.9",
-    "shpjs": "^3.3.2"
+    "shpjs": "^3.3.2",
+    "then-fs": "^2.0.0"
   }
 }
