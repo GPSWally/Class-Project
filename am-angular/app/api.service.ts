@@ -23,7 +23,8 @@ export class ApiService {
 	}
 
 	private getJSON(response: Response) {
-		console.log("getjson", response.text());
+		console.log("getjson");
+		// console.log("getjson", response.text());
 		return response.json();
 	}
 

@@ -11,7 +11,7 @@ import { ChartService } from "./chart/chart_area.service";
 import { FileService } from "./file/file_area.service";
 import { NoteService } from "./note/note.service";
 import { MapService } from "./map/map_area.service";
-import {GOOGLE_MAPS_PROVIDERS} from 'angular2-google-maps/core';
+import {GOOGLE_MAPS_PROVIDERS, GoogleMapsAPIWrapper} from 'angular2-google-maps/core';
 
 
 // declarations for routes
@@ -34,7 +34,8 @@ import { AboutComponent } from "./about.component";
 		NoteService,
 		FileService,
 		MapService,
-		...GOOGLE_MAPS_PROVIDERS
+		...GOOGLE_MAPS_PROVIDERS,
+		GoogleMapsAPIWrapper
 		// AuthService 
 	]
 })

@@ -5,7 +5,7 @@ import { ChartComponent } from "./chart/chart_area.component";
 import { NoteComponent } from "./note/note.component";
 //  import { NoteService } from "./note/note.service";
 import { FileComponent } from "./file/file_area.component";
-// import { FileService } from "./file/file_area.service";
+import { FileService } from "./file/file_area.service";
 import { MapComponent } from "./map/map_area.component";
 // import { MapService } from "./map/map_area.service";
 
@@ -18,6 +18,7 @@ import { MapComponent } from "./map/map_area.component";
 		<div class="row">
 			<div class="col-sm-2 fileArea">
 				<file_area>
+
 				</file_area>
 			</div>
 			<div class="col-sm-10">
@@ -51,7 +52,7 @@ import { MapComponent } from "./map/map_area.component";
 		}
 		.chartArea {
 			height: 20vh;
-			background-color: blue;
+			background-color: lightgreen;
 		}
 		.noteArea { 
 			height: 5vh;
