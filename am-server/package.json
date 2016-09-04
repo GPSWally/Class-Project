@@ -10,10 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "cors": "^2.7.1",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
     "mongoose": "^4.5.9",
+    "multer": "^1.2.0",
     "path": "^0.12.7",
     "shpjs": "^3.3.2",
     "then-fs": "^2.0.0"

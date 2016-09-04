@@ -41,7 +41,10 @@ export class ApiService {
 	get(path: string): Observable<any> {
 		return this.http.get(
 			this.url + path,
-			{headers: this.getHeaders}
+			{
+				headers: this.getHeaders,
+				withCredentials: true
+			}
 		)
 		.map(this.checkForError)
 		.catch(err => Observable.throw(err))

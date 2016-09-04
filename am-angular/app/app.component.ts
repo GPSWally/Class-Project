@@ -6,61 +6,57 @@ import { NoteComponent } from "./note/note.component";
 //  import { NoteService } from "./note/note.service";
 import { FileComponent } from "./file/file_area.component";
 import { FileService } from "./file/file_area.service";
-import { MapComponent } from "./map/map_area.component";
+import { MapAreaComponent } from "./map/map_area.component";
+import { MapPageComponent } from "./map.component";
 // import { MapService } from "./map/map_area.service";
 
 
 @Component({
 	selector: 'agrimeasures',
-	directives: [ NoteComponent, FileComponent, MapComponent, ChartComponent],
+	directives: [ ],
 	template:  `
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-2 fileArea">
-				<file_area>
+			<div class="col-sm-12">
+					<img src="../resources/sunset.jpg" alt="background image">
+			</div>
+		</div>
+	</div>
 
-				</file_area>
-			</div>
-			<div class="col-sm-10">
-				<div class="row">
-					<div class="col-sm-12 mapArea">
-						<map-area>
-						</map-area>
-					</div>
-				</div>
-				<div class="row ">
-					<div class="col-sm-12 chartArea">
-						<chart-area>
-						</chart-area>
-					</div>
-				</div>
-				<div class="row ">
-					<div class="col-sm-12 noteArea">
-						<note_area>
-						</note_area>
-					</div>
-				</div>
-			</div>
-		<div>
-	<div>
 	`,
 	styles: [`
-		.mapArea {
-			height: 65vh;
-			background-color: green;
-			padding: 2px;
+
+		img {
+			width: 800px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 		}
-		.chartArea {
-			height: 20vh;
-			background-color: lightgreen;
+
+		col-sm-12{
+			align-content: center;
 		}
-		.noteArea { 
-			height: 5vh;
-			background-color: red; 
+
+		.container-fluid {
+			height: ;
+			align-content: center;
 		}
-		.fileArea {
-			height: 90vh;
-			background-color: lightblue;
+		.row {
+			align-content: center;
+			background-position: center;
+			text-align: center;
+			background-color: rgba(61,123,52, 0.6);
+		}
+		.photo {
+			padding: 0px;
+			margin: 10px;
+			border: 10px;
+			position: absolute;
+			height: 60vh;
+			width: 92%;
+			background-position: center center;
+			overflow:hidden;
+			background-size: cover;
+
 		}
 
 	`]

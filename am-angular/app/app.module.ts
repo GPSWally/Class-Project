@@ -10,8 +10,10 @@ import { FormsModule } from "@angular/forms";
 import { ChartService } from "./chart/chart_area.service";
 import { FileService } from "./file/file_area.service";
 import { NoteService } from "./note/note.service";
-import { MapService } from "./map/map_area.service";
+import { MapAreaService } from "./map/map_area.service";
 import {GOOGLE_MAPS_PROVIDERS, GoogleMapsAPIWrapper} from 'angular2-google-maps/core';
+import { MapPageComponent } from "./map.component";
+
 
 
 // declarations for routes
@@ -24,7 +26,8 @@ import { AboutComponent } from "./about.component";
 	declarations: [ 
 		MainContainer, 
 		AppComponent, 
-		AboutComponent 
+		AboutComponent, 
+		MapPageComponent
 	],
 	bootstrap:    [ MainContainer ],
 	providers:    [ ApiService, 
@@ -33,7 +36,7 @@ import { AboutComponent } from "./about.component";
 		ChartService,
 		NoteService,
 		FileService,
-		MapService,
+		MapAreaService,
 		...GOOGLE_MAPS_PROVIDERS,
 		GoogleMapsAPIWrapper
 		// AuthService 
